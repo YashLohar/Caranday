@@ -1,0 +1,30 @@
+.banner{
+    @include inner;
+    position: relative;
+     &__section{
+       
+         .bg{
+             height:600px;
+             background-size: cover;
+             background-position: center;
+             background-repeat: no-repeat;
+
+             &__bg-1{
+                 background-image: url(../img/slide04.jpg);
+             }
+
+             &__bg-2{
+                background-image: url(../img/slide01.jpg);
+            }
+
+            &__bg-3{
+                background-image: url(../img/slide02.jpg);
+            }
+
+            &__bg-4{
+                background-image: url(../img/slide03.jpg);
+            }
+             
+         }
+     }
+}

@@ -1,0 +1,39 @@
+.btn{
+    color: white;
+    display: inline-block;
+    @include bg-color;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: .7rem;
+    padding: 15px 50px;
+    margin-top: 2rem;
+    transition: transform 150ms linear;
+    border: none;
+
+    @include media(414px){
+       width: 100%;
+       text-align: center;
+      }
+
+    @include media(900px){
+        margin-top: 1.5rem;
+    }
+
+    &__commercial{
+        background: $primary-color;
+        margin-right: 1.5rem;
+
+        @include media(414px){
+            margin-right: 0;
+          }
+    }
+
+    &__residential{
+        background: $secondry-color;
+    }
+
+    &:hover{
+        transform: scale(1.1);
+        font-weight: 600;
+    }
+}

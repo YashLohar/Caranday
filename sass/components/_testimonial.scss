@@ -1,0 +1,35 @@
+.testimonial-heading{
+    width: 45%;
+
+    @include media(768px){
+        width: 100%;
+        text-align: center;
+    }
+
+    h3{
+        text-transform: uppercase;
+        color: $color-white;
+        font-size: 2.2rem;
+        letter-spacing: .1em;
+        line-height: 1.8rem;
+        font-weight: 600;
+
+        @include media(414px){
+            font-size: 1.5rem
+          }
+    }
+    p{
+        text-align: right;
+        color: $color-white;
+
+        @include media(768px){
+            text-align: left;
+            margin-top: 2rem;
+        }
+
+        @include media(414px){
+            font-size: .8rem
+          }
+    
+    }
+}

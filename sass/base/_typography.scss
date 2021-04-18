@@ -1,0 +1,160 @@
+.banner-text{
+    width: 55%;
+    position: absolute;
+    top: 200px;
+    z-index: 10;
+    padding-left: 3rem;
+
+    @include media(768px){
+      width: 100%;
+   }
+
+   @include media(540px){
+      padding-left: 1rem;
+   }
+     .heading{
+        font-size: 2.3rem;
+        line-height: 2.8rem;
+        letter-spacing: 0.075em;
+        font-weight: 600;
+        color: $color-white;
+
+        @include media(900px){
+           font-size: 2rem;
+           line-height: 2.5rem;
+        }
+
+        @include media(768px){
+           font-size: 1.5rem;
+           line-height: 1.5rem;
+        }
+     }
+     .subheading{
+        font-weight: 400;
+        font-size: 1.1rem;
+        line-height: 1.8rem;
+        color: $color-white;
+        margin-top: .8rem;
+
+        @include media(900px){
+           font-size: 1rem;
+           line-height: 1.5rem;
+        }
+
+        @include media(768px){
+           font-size: 1rem;
+           line-height: 1.5rem;
+        }
+        @include media(540px){
+         font-size: .8rem;
+         line-height: 1.5rem;
+      }
+     }
+
+     @include media(414px){
+        padding-left: 0;
+        padding: 0 1rem;
+    }
+}
+
+.commercial-residential{
+   flex-basis: 45%;
+   padding-left: 3rem;
+
+   @include media(1024px){
+        flex-basis: 100%;
+        margin-bottom: 2rem;
+        padding-left: 0;
+        padding: 0 1rem
+   }
+
+   &__heading{
+      @include heading($color-black);
+
+      @include media(414px){
+        font-size: 1rem
+      }
+   }
+
+   &__subheading{
+      @include subheading($color-gray);
+
+      @include media(414px){
+         font-size: .8rem
+       }
+   }
+}
+
+.residential-text{
+   flex-basis: 55%;
+   text-align: right;
+   padding-right: 3rem;
+
+   @include media(768px){
+     flex-basis: 100%;
+     padding-right: 0;
+     text-align: left;
+     padding: 0 1rem;
+    }
+
+   .heading{
+      @include heading($color-white);
+
+      @include media(768px){
+         color: $color-black;
+       }
+
+      @include media(414px){
+         font-size: 1rem
+       }
+   }
+
+   .subheading{
+      @include subheading($color-white);
+
+      @include media(768px){
+         color: $color-black;
+       }
+
+       @include media(414px){
+         font-size: .8rem
+       }
+   }
+}
+
+.commercial-text{
+   flex-basis: 55%;
+   padding-left: 3rem;
+
+   @include media(768px){
+      flex-basis: 100%;
+      padding-right: 0;
+      text-align: left;
+      padding: 0 1rem;
+   }
+
+   .heading{
+      @include heading($color-white);
+
+      @include media(768px){
+         color: $color-black;
+      }
+
+      @include media(414px){
+         font-size: 1rem
+      }
+   }
+
+   .subheading{
+      @include subheading($color-white);
+
+      @include media(768px){
+         color: $color-black;
+      }
+
+      @include media(414px){
+         font-size: .8rem
+      }
+   }
+}
+

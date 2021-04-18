@@ -1,0 +1,40 @@
+.services{
+
+    .service{
+        flex-basis: 25%;
+        padding: 0 1rem;
+
+        @include media(1024px){
+            flex-basis: 50%;
+            margin-bottom: 2rem;
+        }
+
+        @include media(700px){
+            flex-basis: 100%;
+            padding: 0;
+            text-align: center;
+        }
+
+        &__img{
+            height: 40%;
+
+        }
+
+        &__heading{
+            color: $secondry-color;
+            font-size: .9rem;
+            text-transform: uppercase;
+            letter-spacing: .1rem;
+            font-weight: 500;
+            margin-top: 1rem;
+        }
+
+        &__subheading{
+            font-size:.9rem;
+            font-weight: 400;
+            color: $color-gray;
+            line-height: 1.8rem;
+            margin-top: 1rem;
+        }
+    }
+}

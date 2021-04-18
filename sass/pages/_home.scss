@@ -1,0 +1,56 @@
+.commercial-residential-wrapper{
+    @include inner;
+    @include flex;
+    padding: 3.3rem 0;
+    justify-content: space-between;
+}
+.residential{
+    @include inner;
+    @include flex;
+    justify-content: flex-end;
+    background-image: url(../img/residential.jpg);
+    background-size: cover;
+    padding: 6.5rem 0;
+    margin-bottom: 1rem;
+
+    @include media(768px){
+        background-image: none;
+        padding:2rem 0;
+    }
+}
+
+.commercial{
+    @include inner;
+    @include flex;
+    justify-content: flex-start;
+    background-image: url(../img/commercial.jpg);
+    background-size: cover;
+    padding: 6.5rem 0;
+    margin-bottom: 1rem;
+
+    @include media(768px){
+        background-image: none;
+        padding:2rem 0;
+      }
+}
+.services{
+    @include inner;
+    @include flex;
+    padding: 3.2rem 3rem;
+    justify-content: space-between;
+
+    @include media(700px){
+        padding: 1rem 1rem;
+    }
+}
+.testimonial{
+    @include inner;
+    @include flex;
+    @include bg-color;
+    justify-content: space-between;
+    padding: 3rem 8rem 1rem 3rem;
+
+    @include media(900px){
+        padding: 2rem 1rem;
+    }
+}
